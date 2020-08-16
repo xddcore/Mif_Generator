@@ -1,0 +1,8 @@
+2020年8月15日晚，打算直接用片内存储单元 ROM的IP核，结果发现还需要.mif初始化文件。
+(这文件贼坑，需要手动定义每个存储单元数据，我有4096个Word存储单元，一个个来得累死人...)
+于是我去找了个mif自动生成软件，结果这个软件太老了(2010年所作)，width只支持到16bit，让我32bit的MIPS架构情何以堪。
+于是不如自己写一个，开源出去。于是有了Mif Generator。
+
+作者:xddcore于2020/08/15制作|QQ:1034029664|Github:www.github.com/xddcore
+xSoc(一个32位MIPS架构5级流水线Soc软核)开源地址:https://github.com/xddcore/xSoc 
+本软件开源地址:https://github.com/xddcore/Mif_Generator
